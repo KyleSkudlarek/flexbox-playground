@@ -25,14 +25,41 @@ const Row = styled.div`
   box-sizing: border-box;
 `;
 
+const Hole = styled.div`
+  width: 190px; /* Make rows take full parent width */
+  height: 190px; /* Set row height */
+  background-color: green; /* Just for visualization */
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top; /* Prevents unwanted vertical gaps */
+`;
+
 const App = () => {
   return (
     <BodyWrapper>
       <Parent>
-        {/* 3 Rows */}
-        <Row />
-        <Row />
-        <Row />
+        <Row>
+          <Hole />
+          <Hole />
+          <Hole />
+          <Hole />
+          <Hole />
+        </Row>
+        <Row>
+          <Hole />
+          <Hole />
+          <Hole />
+          <Hole />
+          <Hole />
+        </Row>
+        <Row>
+          <Hole />
+          <Hole />
+          <Hole />
+          <Hole />
+          <Hole />
+        </Row>
       </Parent>
     </BodyWrapper>
   );
